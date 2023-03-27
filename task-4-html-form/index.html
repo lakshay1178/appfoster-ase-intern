@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Form</title>
+</head>
+
+<body style="margin: auto; width: 50%; padding: 10px;">
+
+    <div style="background-color: lightcyan; width:800px; text-align: center; ">
+        <form>
+            <fieldset>
+                <legend>Primary Details :</legend>
+                <label for="">Medicare No.</label>
+                <input type="text">/Valid till
+                <input type="date">
+                <br />
+                <label for="title" id="title">Title</label>
+                <select id="title" name="title">
+                    <option>None</option>
+                    <option>Mr.</option>
+                    <option>Mrs.</option>
+                    <option>Miss</option>
+                    <br>
+                </select>
+                <br>
+                &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;LastName, FirstName, MiddleName</br>
+                <label>Name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                <input type="text"><br>
+                <label for="prefName">Pref Name&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                <input type="text"><br>
+                <label
+                    for="dob">DOB&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                <input type="checkbox">
+                <input type="date"><br>
+                <div>
+                    <label for="sex">Sex&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                    <input type="radio" name='foo'>
+                    <label for="sex">Male</label>
+                    <input type="radio" name='foo'>
+                    <label for="sex">Female</label><br>
+
+
+                </div>
+
+                <label for="familyName">Family Name</label>
+                <input type="text"><br>
+
+
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Contact Details :</legend>
+                <font>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    Home &nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    Work</font><br>
+                <label for="phone">Phone &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                <input type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                <input type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required><br>
+
+                <font>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    Mobile &nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    Fax</font><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input
+                    type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                <input type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required><br>
+
+                <font>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    Next of Kin &nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    Next of Kin Ph:</font><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input
+                    type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                <input type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required><br></br>
+
+
+
+                <label for="phone">Emergency &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                <input type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                <br>
+                <label for="email">Email:
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                <input type="email" id="email" name="email">
+
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Address Details :</legend>
+                <fieldset>
+                    <legend>Residential Address :</legend>
+                    <label for="address">Address 1 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                    <input type="text"><br>
+                    <label for="address">Address 2 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                    <input type="text"><br>
+                    <label for="suburb">Suburb &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                    <input type="text">&nbsp;&nbsp;&nbsp;
+                    <label for="states">State</label>
+                    <select name="states" id="states">
+                        <option value="" disabled selected>VIC</option>
+                        <option value="">Delhi</option>
+                        <option value="">Gurugram</option>
+                        <option value="">Noida</option>
+                        <option value="">Ghaziabad</option>
+                    </select>
+                    <br>
+                    <label for="post">Postal Code</label>
+                    <input type="tel">&nbsp;&nbsp;&nbsp;&nbsp;
+                    <label for="country">Country</label>
+                    <input type="text" placeholder="AUSTRALIA">
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>Single Address :</legend>
+                    <label for="ques">Are Mailing and Residential Address same?</label>
+                    <input type="checkbox">Yes
+
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>Mailing Address :</legend>
+                    <label for="address">Address 1 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                    <input type="text"><br>
+                    <label for="address">Address 2 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                    <input type="text"><br>
+                    <label for="suburb">Suburb &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                    <input type="text">&nbsp;&nbsp;&nbsp;
+                    <label for="states">State</label>
+                    <select name="states" id="states">
+                        <option value="" disabled selected>VIC</option>
+                        <option value="">Delhi</option>
+                        <option value="">Gurugram</option>
+                        <option value="">Noida</option>
+                        <option value="">Ghaziabad</option>
+                    </select>
+                    <br>
+                    <label for="post">Postal Code</label>
+                    <input type="tel">&nbsp;&nbsp;&nbsp;&nbsp;
+                    <label for="country">Country</label>
+                    <input type="text" placeholder="AUSTRALIA">
+
+                </fieldset>
+
+
+            </fieldset>
+            <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label for="ihiNum">IHI Number&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                80036</label> &nbsp;&nbsp;&nbsp;
+            <input type="tel"><br></br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label for="number-status">Number
+                Status&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+            <input type="text"><br></br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label for="record status">Record
+                Status&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+            <input type="text"><br></br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label for="Last-Updated">Last Updated
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+            <input type="text"><br> <br>
+
+
+            <button type="submit">Submit</button>
+            <button type="reset">Clear</button>
+
+
+        </form>
+    </div>
+
+</body>
+
+</html>
