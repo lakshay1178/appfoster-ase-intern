@@ -1,0 +1,40 @@
+#3390 - Task : SQL
+
+
+// 1st command - insert values in customers table
+SELECT * FROM Customers;
+Insert into Customers
+values (8, 'ROhit', 'Sharma' , 32, 'India');
+
+// 2nd command - insert multiple values in customers table
+Select * From Customers;
+Insert into Customers
+values (6, 'Lakshay', 'Choube' , 23, 'India'), (7, 'James' , 'Clear', 46, 'England');
+
+// 3rd command -  get number of customers per country. 
+Select Country, COUNT (*) As Number
+From Customers
+Group By Country Order By Country;
+
+// 4th command - get  the orders who have amount between 100 to 500.
+Select * From Orders Where amount between 100 and 500;
+
+// 5th command - get first and last name who have KeyPad
+Select customers.first_name , customers.last_name 
+From Orders, customers Where orders.customer_id = customers.customer_id and orders.item = "KeyPad";
+
+// 6th command - get the first name and last name of customers who have bought Keypad
+Select customers.country As pend_countries from Shippings 
+Join customers on shippings.customer = customers.customer_id 
+Where shippings.status = "Pending";
+
+
+// 7th command - get the number of orders per customer
+Select customers.customer_id, Count(Orders.order_id) As numOfOrder
+From orders Join customers Where orders.customer_id = customers.customer_id
+Group By customers.customer_id;
+
+
+
+
+
