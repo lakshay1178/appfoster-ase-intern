@@ -1,0 +1,231 @@
+    3  git config --global user.name Lakshay Choube
+    4  git config --global user.email lakshay15012000@gmail.com
+    5  git config --global user
+    6  git config --global user.name
+    8  git init
+   12  git status
+   13  git clone https://github.com/shashirajraja/onlinebookstore.git
+   14  git statis
+   15  git status
+   21  git status
+   22   git status
+   23  git difBuyBooksServlet.java
+   24  git diff OnlineBookStore/servlets/BuyBooksServlet.java
+   25  git diff OnlineBookStore/servlets/BuyBooksServlet.java
+   27  git status
+   28  git add onlinebookstore
+   37  git status
+   38  git add  OnlineBookStore/servlets/BuyBooksServlet.java
+   39  git status
+   40  git commit -m "Just random comments put"
+   41  git log
+   42  git status
+   43  git push
+   44  git status
+   45  git branch
+   46  git checkout -b LakshayBranch
+   47  git branch
+   48  git revert
+   49  git checkout master
+   50  git branch -b LakshayBranch
+   51  git branch -D LakshayBranch
+   52  git branch
+   54   git branch -b LakshayBranch
+   55  $  git checkout branch -b LakshayBranch
+   56  git log
+   64  git config user.name
+   69  git commit
+   81  project git:(master)
+   84  ls.git
+   85  ls .git
+   87  git status
+   88  git add onlinebookstore
+   89  git add names.txt
+   90  git commit names.txt
+   91  git ls 
+   93  git status
+   95  git status
+   96  git add new.docx
+   97  git status
+   98  git -m commit
+   99  git commit -m
+  100  git commit -m new.docx
+  101  git commit
+  102  git commit new.docx
+  104  git commit Lakshay.txt
+  108  git status
+  110  git status
+  111  git add.
+  113  git add .
+  114  git commit -m
+  115  git commt -m names.txt
+  117  git status
+  118  git restore --staged names,txt
+  119  git restore --staged names>txt
+  120  git resore --staged names.txt
+  121  git restore --staged names.txt
+  122  git status
+  123  git add names.txt
+  125  git status
+  126  git commit -m names.txt
+  127  git log
+  132  git config --list
+  136  git --version
+  137  git user.name
+  139  git .quit
+  152  git remote -v
+  157  mkdir task-5-git
+  158  cd task-5-git
+  159  git init
+  162  git status
+  163  git status
+  164  git status
+  165  git add ase-train 
+  166  git status
+  167  git commit -m "First ase commit"
+  168  git branch
+  169  git checkout -b newBranch
+  170  git checkout branch
+  171  git checkout newBranch
+  172  git branch
+  173  git remote add origin https://github.com/Lakshay1598/appfoster-ase-training.git
+  174  git push -u origin master
+  175  git push origin newBranch
+  176  git pull origin master
+  177  git log
+  178  git remote add origin 'https://github.com/Lakshay1598/appfoster-ase-training.git
+  179  git push -u origin master
+  180  git remote add origin https://github.com/Lakshay1598/appfoster-ase-training.git
+  181  git remote add origin 'https://github.com/Lakshay1598/appfoster-ase-training.git'
+  182  git init
+  183  git add .
+  184  git submodule add <https://github.com/Lakshay1598/appfoster-ase-training/.git
+  185  git push -u origin master
+  186  git branch --delete newBranch
+  187  git status
+  188  rm -fr .git
+  189  git status
+  190  git init
+  191  git add README.md
+  192  git commit -m "first commit of React project"
+  193  git branch -M main
+  194  git remote add origin https://github.com/Lakshay1598/Amazon-Clone.git
+  195  git push -u origin master
+  196  git push -u origin master
+  197  git push -u origin main
+  198  git status
+  199  git add .
+  200  git config --global core.safecrlf false
+  201  git add .
+  202  git staus
+  203  git status
+  204  git commit -m "Files of project committed"
+  205  git status
+  206  git add .
+  207  git status
+  208  git commit -m "Latest Commit"
+  209  git push origin newBranch
+  210  git push -u origin master
+  211  git push -u origin main
+  212  git status
+  213  git remote set-url origin https://github.com/lakshay1178/appfoster-ase-intern.git
+  214  git status
+  215  git remote -v
+  216  git push -u origin main
+  218  git rm -rf
+  219  git init
+  220  git remote add origin https://github.com/lakshay1178/appfoster-ase-intern.git
+  221  git branch -M main
+  222  git push -u origin main
+  223  git push origin main
+  224  git push origin master
+  225  git branch -b
+  226  git checkout -b main
+  227  git push origin main
+  228  git status
+  229  git add .
+  230  git commit -m "First commit after changing the repo for Appfoster"
+  231  git push -u origin main
+  232  git status
+  233  git oush -u origin main
+  234  git push -u origin main
+  235  git status
+  236  git push -u origin main
+  237  git push
+  238  git status
+  239  git push origin main
+  240  git push -u origin main
+  241  git status
+  242  git status
+  243  git add .
+  244  git commit -m "bootstrap project In Dev"
+  245  git push origin main
+  246  git status
+  247  git push
+  248  git push -u origin main
+  249  git status
+  250  git commit
+  251  git push origin main
+  252  git push -f origin main
+  253  git commit -m "Retry"
+  254  git status
+  255  git push origin master
+  256  git push origin main --force
+  257  git status
+  258  git add .
+  259  git commit -m "BootStrap Done"
+  260  git push -u origin main
+  261  git statis
+  262  git status
+  263  git status
+  264  git add .
+  265  git commit 
+  266  git status
+  267  git commit 
+  268  git commit 
+  269  git commit
+  270  git status
+  271  git push origin main
+  272  git status
+  296  git status
+  309  git reflog
+  311  git checkout main
+  312  git checkout -b testBranch
+  313  git branch
+  314  git add .
+  315  git commit -m "3379 updated"
+  316  git push -u origin main
+  317  git status
+  318  git status
+  319  git add . && git commit -m "3377 done"
+  320  git status
+  321  git add .
+  322  git commit -m "JS issue done"
+  323  git push -u origin main
+  324  git add .
+  325  git commit -m "All errors rectified"
+  326  git push -u origin main
+  327  git status
+  328  git add .
+  329  git commit -m "trying again"
+  330  git push -u origin main
+  332  git branch
+  333  git checkout main
+  334  git branch
+  335  git merge testBranch
+  336  git status
+  337  git push -u origin main
+  338  git status
+  340  git log
+  341  git log
+  342  git ls
+  344  git mv text.md read.md
+  351  git status
+  353  git mv text.md myText.md
+  356  git remote -v
+  357  git --version
+  358  git log
+  359  git log
+  360  git status
+  369  history | grep git > task-9-cli
+  371  history | grep git > text.txt
