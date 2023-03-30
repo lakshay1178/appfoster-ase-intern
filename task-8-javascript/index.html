@@ -25,13 +25,13 @@
 
                 <div class="mb-4 mt-4">
                     <label for="split" class="form-label">Enter Number of Times you want to Split</label> <br>
-                    <input id="split" type="text" class="form-control form-control-lg" oninput="this.value = 
+                    <input id="split" type="text" class="form-control form-control-lg"  oninput="this.value = 
                     !!this.value && Math.abs(this.value) >= 0 ? Math.abs(this.value) : null">
                     <div id="errorField"></div>
 
                 </div>
 
-                <button id="splitButton" class="btn btn-primary" style="color: rgb(246, 213, 213);" type="button">Split</button>
+                <button id="splitButton" class="btn btn-primary"  type="button" onsubmit="clearBox(div)">Split</button>
 
             </div>
 

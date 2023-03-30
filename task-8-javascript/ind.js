@@ -37,7 +37,7 @@ const check = () => {
     // inputVal = field 
 
     // numsplits = error 
-    if (input < num) {
+    if (parseInt(input) < parseInt(num)) {
       valid = false;
        numSplits.classList.add("err");
        numSplits.style.backgroundColor = "rgb(246, 213, 213)";
@@ -55,12 +55,19 @@ const check = () => {
 
 }
 
+// function clearBox(elementID)
+// {
+//     document.getElementById(elementID).innerHTML = "";
+// }
+
 
 
 const split = () => {
     const input = inputVal.value;
     const num = numSplits.value;
     let curr = input;
+
+    document.getElementById("result").innerHTML = "";   
 
 
         for (let i = 0; i < num; i++) {
@@ -79,12 +86,22 @@ const split = () => {
         numSplits.value = "";
 
 
-
 }
 
 numSplits.addEventListener("input" , check)
 
 
-btn.addEventListener("click", split)
 
 
+// btn.addEventListener('submit', function handleClick(event) {
+    
+//     event.preventDefault();
+  
+//     inputVal.value = '';
+
+//     numSplits.value = '';
+
+//     console.log(inputVal)
+//   });
+
+  btn.addEventListener("click", split)
