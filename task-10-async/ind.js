@@ -51,10 +51,10 @@ handleOnClick = (data) => {
   dataTable.map((each) => {
     if (each.id == data) {
       showData = `<div>
-                        <p><strong>Name: </strong>${each.name} <span id="name"></span></p>
-                        <p><strong>Email: </strong>${each.email} <span id="email"></span></p>
-                        <p><strong>Gender: </strong>${each.gender} <span id="gender"></span></p>
-                        <p><strong>Status: </strong>${each.status} <span id="status"></span></p>
+                        <p><strong>Name: </strong> ${each.name} <span id="name"></span></p>
+                        <p><strong>Email: </strong> ${each.email}<span id="email"></span></p>
+                        <p><strong>Gender: </strong> ${each.gender}<span id="gender"></span></p>
+                        <p><strong>Status: </strong> ${each.status}<span id="status"></span></p>
             </div>`
       return;
     }

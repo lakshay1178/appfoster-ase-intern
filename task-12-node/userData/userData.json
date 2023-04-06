@@ -1,0 +1,103 @@
+[
+    {
+        "id": 719875,
+        "name": "Parvati Pandey",
+        "email": "pandey_parvati@mcglynn.io",
+        "gender": "female",
+        "status": "inactive",
+        "projects": "Express API Project with Node "
+    },
+    {
+        "id": 719874,
+        "name": "Shivakari Saini",
+        "email": "shivakari_saini@prosacco.biz",
+        "gender": "female",
+        "status": "inactive",
+        "projects": "Mongoos Project with ajdsjhjhsdh "
+    },
+    {
+        "id": 718903,
+        "name": "Deeptimay Kaur",
+        "email": "kaur_deeptimay@von.io",
+        "gender": "male",
+        "status": "active",
+        "projects": "POwer station "
+    },
+    {
+        "id": 717880,
+        "name": "Amb. Meena Verma",
+        "email": "meena_verma_amb@bernier.org",
+        "gender": "female",
+        "status": "inactive",
+        "projects": "Python API Project with mongosndn "
+    },
+    {
+        "id": 717879,
+        "name": "Dr. Aaditya Gandhi",
+        "email": "dr_gandhi_aaditya@greenfelder-anderson.net",
+        "gender": "male",
+        "status": "inactive",
+        "projects": "Brave API Project with Git "
+    },
+    {
+        "id": 717878,
+        "name": "Trilochan Khanna",
+        "email": "trilochan_khanna@mayer.info",
+        "gender": "female",
+        "status": "active",
+        "projects": "Docker and php "
+    },
+    {
+        "id": 716971,
+        "name": "Sarla Agarwal",
+        "email": "sarla_agarwal@stehr.biz",
+        "gender": "female",
+        "status": "inactive",
+        "projects": "Nuclear bomb  "
+    },
+    {
+        "id": 716970,
+        "name": "Smriti Guneta",
+        "email": "guneta_smriti@hudson.org",
+        "gender": "female",
+        "status": "active",
+        "projects": " Robot with wings "
+    },
+    {
+        "id": 716969,
+        "name": "Ojaswini Mahajan",
+        "email": "mahajan_ojaswini@beier.info",
+        "gender": "male",
+        "status": "inactive",
+        "projects": "Novel proof read SPy mission"
+    },
+    {
+        "id": 713851,
+        "name": "Msgr. Purushottam Desai",
+        "email": "desai_purushottam_msgr@emard.biz",
+        "gender": "female",
+        "status": "active",
+        "projects": "Web scraping AI "
+    },
+    {
+        "id": "244",
+        "name": "Lakshay",
+        "email": "lak",
+        "gender": "male",
+        "status": "male",
+        "projects": "React Music",
+        "age": "50"
+    },
+    {
+        "id": "244",
+        "name": "James",
+        "gender": "male",
+        "status": "male"
+    },
+    {
+        "id": "244",
+        "name": "James",
+        "gender": "male",
+        "status": "male"
+    }
+]
