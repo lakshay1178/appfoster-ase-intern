@@ -12,40 +12,24 @@
 
 </head>
 <body style="background-color: lightgray;">
-
-
     <form class="form-group rounded-4 mx-3 mt-4 px-4 pt-4 pb-4" style="background-color: white;">
-            <div class="mb-3 mt-2 ">
-                
+            <div class="mb-3 mt-2 ">                
                 <div>
                     <label for="number" class="form-label">Enter a Number</label> <br>
                     <input id="number" type="text" class="form-control form-control-lg" >
-
                 </div>
-
                 <div class="mb-4 mt-4">
                     <label for="split" class="form-label">Enter Number of Times you want to Split</label> <br>
                     <input id="split" type="text" class="form-control form-control-lg"  oninput="this.value = 
                     !!this.value && Math.abs(this.value) >= 0 ? Math.abs(this.value) : null">
                     <div id="errorField"></div>
-
                 </div>
-
                 <button id="splitButton" class="btn btn-primary"  type="button" onsubmit="clearBox(div)">Split</button>
-
             </div>
-
     </form>
-
     <div class="container-fluid px-4 d-flex flex-row text-center mt-4" style="height: 50px; font-size: 26px;" id="result">
-
-    </div>
-
-    
+    </div>    
 </body>
-
-
-
 <script src="ind.js"></script>
 
 </html>

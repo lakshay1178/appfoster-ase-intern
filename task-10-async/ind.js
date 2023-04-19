@@ -1,18 +1,6 @@
-// async function getJobAsync()
-// {
-//   let response = await fetch(`https://gorest.co.in/public/v2/users`);
-//   let data = await response.json()
-//   return data;
-// }
-// getJobAsync('jobPositionHere')
-//   .then(data => console.log(data));
-
 
 console.log("This is working")
-
-
 let dataTable = {}
-
 
 fetch("https://gorest.co.in/public/v2/users").then((data) => {
   return data.json(); // Converted to json object
@@ -43,10 +31,9 @@ fetch("https://gorest.co.in/public/v2/users").then((data) => {
   console.log(err);
 });
 
-
-
-
 handleOnClick = (data) => {
+  console.log(data);
+  console.log("https://gorest.co.in/public/v2/users/"+data);
   let showData = "";
   dataTable.map((each) => {
     if (each.id == data) {

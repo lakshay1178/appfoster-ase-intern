@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <%- include('../partials/head'); %>
+    <title>User Page</title>
+
+</head>
+
+<body>
+  <header>
+    <%- include('../partials/pagetitle'); %>
+  </header>
+  <!-- 
+  <div class="d-flex justify-content-center">
+    <div id="user-details">
+      <h1>User List</h1>
+      <ul>
+
+        Lakshay
+
+      </ul>
+
+      <table class="table table-bordered">
+        <thead>
+          <tr class="text-center">
+
+            <th scope="col">User name</th>
+            <th scope="col">Details </th>
+          </tr>
+        </thead>
+        <tbody id="tableBody">
+
+        </tbody>
+
+      </table>
+    </div>
+
+  </div> -->
+
+  <div class="container">
+    <div class="row my-4">
+      <div class="col-lg-12">
+        <div class="table-responsive">
+          <table class="table table-striped text-center">
+            <thead>
+              <tr class="table-dark">
+                <th>S.No.</th>
+                <th>Project</th>
+                <th>Project Description</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>69</td>
+                <td>enim totam quos</td>
+                <td>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum, aut?</td>
+
+              </tr>
+              <tr>
+                <td>70</td>
+                <td>eos eum maiores</td>
+                <td>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi, ad.</td>
+              </tr>
+              <tr>
+              </tr>
+              <tr>
+                <td>74</td>
+                <td>Angular</td>
+              </tr>
+            </tbody>
+
+          </table>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  <footer class="text-center fixed-bottom">
+    <a href="http://localhost:3000/users/:userId/projects">Project Page</a>
+    <%- include('../partials/footer'); %>
+  </footer>
+
+</body>
+
+
+</html>
