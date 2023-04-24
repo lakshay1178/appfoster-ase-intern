@@ -2,6 +2,7 @@
 
 const db = require("../models");
 const User = db.Users;
+const Project = db.projects;
 const Op = db.Sequelize.Op;
 
 // Create and Save a new User

@@ -1,10 +1,27 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark d-flex justify-content-end mx-5 rounded px-3">
-    <a class="navbar-brand mr-5" href="/users">Users</a>
+    <a class="navbar-brand mr-5" href="/">Users List</a>
     <ul class="navbar-nav mr-auto">
-      <li class="nav-item d-flex">
+      <!-- <li class="nav-item d-flex">
         <a class="nav-link" href="/projects">Projects</a>
         <a class="nav-link" href="/add">Add user</a>
-      </li>
+        <a class="nav-link" href="/projects">Add project</a>
+      </li> -->
+      <% if (req.path === '/add') { %>
+        <li class="nav-item d-flex">
+          <a class="nav-link" href="/add">Add user</a>
+        </li>
+      <% } else if (req.path === '/projects') { %>
+        <li class="nav-item d-flex">
+          <a class="nav-link" href="/projects">Projects</a>
+          <a class="nav-link" href="/projects/add">Add project</a>
+        </li>
+      <% } else { %>
+        <li class="nav-item d-flex">
+          <a class="nav-link" href="/projects">Projects</a>
+          <a class="nav-link" href="/add">Add user</a>
+          <a class="nav-link" href="/projects/add">Add project</a>
+        </li>
+      <% } %>
       
     </ul>
   </nav>

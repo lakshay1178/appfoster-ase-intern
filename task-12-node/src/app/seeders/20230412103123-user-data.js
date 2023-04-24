@@ -17,7 +17,6 @@ module.exports = {
       user.push({
         name:hoaxer.lorem.words(),
         email:hoaxer.lorem.words(),
-        projecttheme:hoaxer.lorem.words(),
 
         createdAt:new Date(),
         updatedAt : new Date()

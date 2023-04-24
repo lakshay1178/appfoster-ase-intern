@@ -4,7 +4,7 @@
 <head>
 
   <%- include('../partials/head'); %>
-  <title>User Page</title>
+    <title>User Page</title>
 
 </head>
 
@@ -12,84 +12,72 @@
   <header>
     <%- include('../partials/pagetitle'); %>
   </header>
-<!-- 
-  <div class="d-flex justify-content-center">
-    <div id="user-details">
-      <h1>User List</h1>
-      <ul>
+  
+  <div class="container">
+    <div class="row my-4">
+      <div class="col-lg-12">
+        <div class="table-responsive">
+          <table class="table table-striped text-center">
+            <thead>
+              <tr class="table-dark">
+                <th>S.No.</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Projects</th>
+                <th>Options</th>
+              </tr>
+            </thead>
 
-        Lakshay
+            <tbody>
+              <% let count=1 %>
 
-      </ul>
-
-      <table class="table table-bordered">
-        <thead>
-          <tr class="text-center">
-
-            <th scope="col">User name</th>
-            <th scope="col">Details </th>
-          </tr>
-        </thead>
-        <tbody id="tableBody">
-
-        </tbody>
-
-      </table>
-    </div>
-
-  </div> -->
-
-    <div class="container">
-      <div class="row my-4">
-        <div class="col-lg-12">
-          <div class="table-responsive">
-            <table class="table table-striped text-center">
-              <thead>
-                <tr class="table-dark">
-                  <th>Id</th>
-                  <th>Name</th>
-                  <th>Email</th>
-                  <th>Project</th>
-                  <th>Options</th>
-                </tr>
-              </thead>
-
-              <tbody> 
-                
-
-                <% Users.forEach( (user) => { %>
-                  <tr>                      
-                    <td><%= user.id %></td>
-                    <td><%= user.name %></td>
-                    <td><%= user.email %></td>
-                    <td><%= user.projecttheme %></td>
+                <% Users.forEach( (user)=> { %>
+                  <tr>
+                    <td>
+                      <%= count %>
+                    </td>
+                    <td>
+                      <%= user.name %>
+                    </td>
+                    <td>
+                      <%= user.email %>
+                    </td>
+                    <td>
+                      <a href="/users/:<%= user.id %>/projects">
+                        <i class="fa-solid fa-eye" style="color: #1f2e48;"></i>
+                      </a>
+                      
+                    </td>
                     <!-- <td>
                       <a href="/users/edit/<%= user.id %>" class="text-success"><i class="fas fa-edit fa-lg mx-1"></i></a>
                       <a href="/users/delete/<%= user.id %>" class="text-danger"><i class="fas fa-trash fa-lg mx-1"></i></a>
                     </td> -->
                     <td>
-                      <a href="/projects" class="text-success"><i class="fas fa-edit fa-lg mx-1"></i></a>
-                      <a href="/users/delete/<%= user.id %>" class="text-danger"><i class="fas fa-trash fa-lg mx-1"></i></a>
+                      <a href="/users/edit/<%= user.id %>" class="text-success"><i
+                          class="fas fa-edit fa-lg mx-1"></i></a>
+                      <a href="/users/delete/<%= user.id %>" class="text-danger"><i
+                          class="fas fa-trash fa-lg mx-1"></i></a>
                     </td>
                   </tr>
-                <% }); %>
-                
+                  <% count++ %>
+                    <% }); %>
 
-              </tbody>
 
-            </table>
-            
-          </div>
+            </tbody>
+
+          </table>
+
         </div>
       </div>
     </div>
+  </div>
 
 
 
 
 
   <footer class="text-center fixed-bottom">
-    <a href="http://localhost:3000/users/:userId/projects" >Project Page</a>
+
     <%- include('../partials/footer'); %>
   </footer>
 
@@ -97,16 +85,16 @@
 
 <script>
 
-let AllData = {}
-  fetch("http://localhost:3000/api/users").then((data)=>{
+  let AllData = {}
+  fetch("http://localhost:3000/api/users").then((data) => {
     console.log(data);
     return data.json(); // Converted to object
-}).then((objectData)=>{
+  }).then((objectData) => {
     console.log(objectData[0]);
-    let tableData="";
+    let tableData = "";
     AllData = objectData;
-    objectData.map((values)=>{
-        tableData +=`<tr class="text-center">
+    objectData.map((values) => {
+      tableData += `<tr class="text-center">
            
         <td class="text-center">${values.name}</td>
         <td><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" onClick="handleClickModal(${values.id})">
@@ -115,12 +103,12 @@ let AllData = {}
           <td><div class="projectDetailBtn"><a href="http://localhost:3000/host/user/:userId/projects?${values.projecttheme}" target="_blank"><button><i class="fa-solid fa-arrow-right"></i></button></a></div></td>
           
       </tr>`;
-      
+
     });
-    document.getElementById("table_body").innerHTML=tableData;
-}).catch((error)=>{
+    document.getElementById("table_body").innerHTML = tableData;
+  }).catch((error) => {
     console.log(error);
-});
+  });
 
 
   document.getElementById("tableBody").innerHTML = "This is inner html";

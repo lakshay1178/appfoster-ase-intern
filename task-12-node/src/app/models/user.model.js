@@ -6,7 +6,7 @@ const {sequelize} = require(".")
 
 module.exports = (sequelize, Sequelize) => {
     const User = sequelize.define("User", {
-      id:{
+      userId:{
         type: Sequelize.INTEGER,
         primaryKey: true,
         autoIncrement: true
@@ -15,9 +15,6 @@ module.exports = (sequelize, Sequelize) => {
         type: Sequelize.STRING
       },
       email: {
-        type: Sequelize.STRING
-      },
-      projecttheme: {
         type: Sequelize.STRING
       }
     });
