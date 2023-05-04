@@ -1,25 +1,29 @@
 <?php
 
 namespace App\Http\Controllers;
-
-use App\Models\UserList;
 use App\Models\ProjectList;
+use App\Models\UserList;
+
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\View\View;
 
-class UserController extends Controller
+
+
+class ProjectController extends Controller
 {
     /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index($id): View
     {
-        $users = UserList::all();
-        return view('user.index', compact('users'))->with('users' , $users);
+        $users = ProjectList::where('project_id', $id)->get();
+        $userId = $users->first()->project_id;
+
+        return view('projects.projects', compact('users', 'userId'))->with('users' , $users);
     }
 
     /**
@@ -27,11 +31,12 @@ class UserController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function create($id): View
     {
-        return view('user.addUser');
+        return view('projects.addpro', ['project_id' => $id]);
     }
 
+ 
     /**
      * Store a newly created resource in storage.
      *
@@ -41,60 +46,58 @@ class UserController extends Controller
     public function store(Request $request)
     {
         $input = $request->all();
-        UserList::create($input);        
-        return redirect('users');
         
+        ProjectList::create($input);
+
+        return redirect("/users/{$request->project_id}/project");
+
     }
+
 
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\userList  $userList
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show(UserList $userList): View
+    public function show($id)
     {
-        // 
-    }    
+        //
+    }
 
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\userList  $userList
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit(UserList $userList)
+    public function edit($id)
     {
-        $user = $userList;
-        return view('user.editUser', compact('user'));
+        //
     }
 
     /**
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\userList  $userList
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
     public function update(Request $request, $id)
     {
-        $user = UserList::findOrFail($id);
-        $input = $request->all();
-        $user->update($input);
-        return redirect('users');
+        //
     }
 
     /**
      * Remove the specified resource from storage.
      *
-     * UserList $userList
-     * @param  \App\Models\userList  $userList
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
     public function destroy($id)
     {
-        $user = UserList::findOrFail($id);
+        $user = ProjectList::findOrFail($id);
         $user->delete();
-        return redirect('users')->with('flash_message', 'Contact deleted!'); 
+        return redirect('projects');
     }
 }
