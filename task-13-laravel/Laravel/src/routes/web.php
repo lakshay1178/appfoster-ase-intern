@@ -41,5 +41,5 @@ Route::get('/projects/{id}/create', [ProjectController::class, 'create']);
 Route::post('/projects', [ProjectController::class, 'store']);
 
 
-// Route::post('projects/{id}/delete', [ProjectController::class, 'destroy']);
+Route::post('projects/{id}/delete', [ProjectController::class, 'destroy']);
 

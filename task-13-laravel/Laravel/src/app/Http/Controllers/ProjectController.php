@@ -98,6 +98,6 @@ class ProjectController extends Controller
     {
         $user = ProjectList::findOrFail($id);
         $user->delete();
-        return redirect('projects');
+        return redirect("/users/{$id}/project");
     }
 }

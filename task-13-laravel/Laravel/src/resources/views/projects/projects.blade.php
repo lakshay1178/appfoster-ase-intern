@@ -41,7 +41,7 @@
                                     <td>{{ $project->projectdesc }}</td>
                                     <td>
                                         <a href="{{ url('/users/' . $project->id . '/edit') }}" title="Edit Student"><button class="btn btn-primary btn-sm"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></button></a>
-                                        <form method="POST" action="{{ url('/users' . '/' . $project->id) }}" accept-charset="UTF-8" style="display:inline">
+                                        <form method="POST" action="/users/{{$project->project_id }}/delete" accept-charset="UTF-8" style="display:inline">
                                             {{ method_field('DELETE') }}
                                             {{ csrf_field() }}
                                             <button type="submit" class="btn btn-danger btn-sm" title="Delete Contact"><i class="fa fa-trash-o" aria-hidden="true"></i></button>
